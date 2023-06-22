@@ -1,0 +1,190 @@
+/* Mobile First */
+@media screen and (min-width: 576px) {
+    /* testa della pagina */
+    header {
+        width: calc(100vw - 200px);
+    }
+
+    /* corpo della pagina */
+    main {
+        width: calc(100vw - 200px);
+    }
+
+    /* SIDEBAR */
+    aside {
+        width: 200px;
+        padding: 20px;
+        padding-bottom: 10px;
+    }
+
+    aside .row .col:first-child {
+        flex-grow: 0;
+    }
+
+    aside .col > .card {
+        align-items: flex-start;
+    }
+
+    aside .card-menu .img-name {
+        margin-left: 0.3rem;
+    }
+
+    aside .flex-xmain {
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    aside .spotify-mobile {
+        display: none;
+    }
+
+    aside .img-logo {
+        margin-bottom: 1.7rem;
+    }
+
+    aside .spotify-desktop {
+        width: 130px;
+    }
+
+    aside .no-mobile {
+        display: block;
+    }
+
+    /* PLAYLIST */
+    aside .row .col:nth-child(2) {
+        flex-grow: 1;
+        min-height: 100px;
+        overflow-y: auto;
+    }
+
+    aside .card .playlist-menu {
+        margin-top: 1.2rem;
+    }
+
+    aside .playlist-menu h5 {
+        margin-bottom: 0.5rem;
+    }
+
+    /* croce playlist */
+    aside .plus {
+        width: 45px;
+        height: 45px;
+        background-color: #d2d2d2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    aside .plus hr {
+        width: 25px;
+        border: 2px solid #000000;
+        background-color: #000000;
+    }
+
+    aside .plus hr:last-child {
+        position: absolute;
+        top: 46%;
+        transform: rotate(90deg) ;
+    }
+    /* fine croce playlist */
+
+    aside .add-to-playlist {
+        margin-bottom: 0.7rem;
+        cursor: pointer;
+    }
+
+    aside .add-to-playlist span {
+        margin-left: 0.7rem;
+    }
+
+    aside .ul-playlist li {
+        line-height: 2rem;
+        list-style-type: none;
+    }
+
+    /* colonna bassa */
+    aside .card-bottom {
+        align-items: flex-start;
+    }
+
+    aside .card-bottom a:hover {
+        filter: brightness(200%);
+    }
+
+    aside .card-download {
+        margin-bottom: 0;
+    }
+
+    aside .card-download span {
+        margin-left: 0.7rem;
+    }
+
+    aside .card-profile span {
+        margin-left: 0.7rem;
+    }
+
+    aside .card-bottom hr {
+        width: 100%;
+        margin: 0.7rem 0;
+        border: 1px solid #8d8d8d;
+        background-color: #8d8d8d;
+    }
+
+    aside .card-download img {
+        margin-bottom: 0;
+    }
+
+    /* fondo della pagina */
+
+    /* colonna di sinistra */
+    footer .chosen-song img {
+        width: 50px;
+    }
+
+    footer .chosen-song img {
+        width: 50px;
+    }
+
+    footer .reaction {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer .reaction .fa-heart {
+        margin-bottom: 0;
+        margin-right: 0.3rem;
+    }
+}
+
+/* breakpoint md */
+@media screen and (min-width: 768px) {
+    /* corpo della pagina */
+
+    /* recently played */
+    #recently-played .col-md {
+        width: calc((100% / 4) - 1rem);
+        margin-bottom: 1rem;
+    }
+
+    /* Creato per John Doe and popular artists */
+    .two-to-tow-section .col-md {
+        width: calc((100% / 4) - 1rem);
+        margin-bottom: 1rem;
+    }
+}
+
+/* breakpoint lg */
+@media screen and (min-width: 992px) {
+    /* corpo della pagina */
+
+    /* recently played */
+    #recently-played .col-md {
+        width: calc((100% / 6) - 1rem);
+    }
+
+    /* Creato per John Doe and popular artists */
+    .two-to-tow-section .col-md {
+        width: calc((100% / 6) - 1rem);
+    }
+}
